@@ -14,9 +14,10 @@ html, body {
 .main-banner {
   background-image: url(../images/glasses-bg.png);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 30rem;
+  max-width: 100%;
   padding-top: 1rem;
 }
 
@@ -45,6 +46,10 @@ html, body {
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
+}
+
+.mobile-navigation {
+  display: none;
 }
 
 li {
@@ -138,4 +143,153 @@ img {
   display: flex;
   align-items: center;
   position: relative;
+}
+
+/*------------- Media Query Tablets --------------*/
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .main-banner {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  #slogan.container {
+    display: flex;
+    flex-grow: 0;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 2rem;
+    margin-top: 5rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    background-color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 1.5rem 5rem;
+  }
+
+  .mobile-navigation {
+    display: none;
+  }
+}
+
+/*------------ Media Query Mobile --------------*/
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .logo-name span {
+    display: none;
+  }
+
+  .mobile-navigation {
+    list-style-type: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .main-banner {
+    height: 17rem;
+    background-position: center;
+  }
+
+  #slogan.container {
+    padding: 0;
+    margin-top: 9rem;
+    background-color: white;
+  }
+
+  #services {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 3.77rem 0;
+  }
+
+  .service {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 5rem;
+    height: auto;
+    text-align: center;
+    font-size: 0.77rem;
+  }
+
+  .service div {
+    margin-top: 1rem;
+  }
+
+  #fittings.service {
+    margin-top: 1.54rem;
+  }
+
+  #delivery.service {
+    margin-top: 1.54rem;
+  }
+
+  .bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .information {
+    width: 100%;
+    margin-bottom: 4rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .information p {
+    font-size: 0.77rem;
+  }
+
+  .title {
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    max-width: 100%;
+    padding: 0.5rem 1.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  #footer {
+    background-color: azure;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
