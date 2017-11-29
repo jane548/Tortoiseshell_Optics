@@ -99,30 +99,43 @@ img {
 .bottom-container {
   display: flex;
   justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .information {
-  border: 1px solid black;
   width: 35%;
   margin-bottom: 5rem;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
 
-h3 {
+.title {
   background-color: cadetblue;
   color: white;
   font-weight: bold;
   font-size: 1rem;
-  width: 10rem;
+  max-width: 10rem;
   padding: 0.5rem 1.25rem;
   margin-bottom: 1rem;
 }
 
 /*-------------- Footer Styles ----------------*/
 
-footer {
+#footer {
   background-color: azure;
+  width: 1032px;
   display: flex;
+  align-items: center;
+}
 
+.logo img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
